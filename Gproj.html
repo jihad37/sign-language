@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>مرسال - لغة الإشارة</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spinkit/2.0.1/spinkit.min.css">
+    <link rel="stylesheet" href="Gproj.css">
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#"  >
+                    <img src="logo.jpg" alt="شعار مرسال" class="rounded-circle border border-secoundry" id="home-link" onclick="showHome()" style="width: 50px; height: 50px;">
+                </a>
+                <h1 class="nlogo">مرسال</h1>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل القائمة">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="#" id="home-link" onclick="showHome()">الرئيسية</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#" id="app-link" onclick="showApp()">التطبيق</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="https://www.youtube.com/playlist?list=PLaQzmDaYayMCuW3Y0LhKnYON8u5_QQYsW" target="_blank">التعلّم</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#" onclick="showLogin()" id="login-link">تسجيل الدخول</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#" id="show-login-link">تسجيل</a>                
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="container-fluid content">
+        <div id="home-content">
+            <div class="container1 d-flex align-items-center min-vh-100">
+                <div class="row w-100 d-flex justify-content-evenly align-items-center flex-wrap">
+                    <div class="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+                        <div class="frame">
+                            <img src="photo1.png" alt="Sign Language">
+                        </div>
+                    </div>
+                     <div class="col-md-5 text-box">
+                        <h1><span>لغة</span> الإشارة <br> في متناول يدك!</h1>
+                        <p>اكتشف الطريقة الجديدة للتواصل مع مجتمع الصم والبكم بسهولة! يساعدك تطبيقنا على ترجمة لغة الإشارة إلى نصوص وكلمات في الوقت الفعلي.</p>
+                        <a href="#" class="btn btn-custom" onclick="showApp()">جرب الآن</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container2 mt-5">
+                <div class="row g-4 justify-content-evenly">
+                    <!-- البطاقة الأولى -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-card">
+                            <div class="icon">
+                                <i class="fa-solid fa-display"></i>
+                            </div>
+                            <h2 class="service-title"> تعلم لغة الإشارة</h2>
+                            <p class="service-text"> اجعل لغة الإشارة جزءًا من مهاراتك! تعلم الأساسيات والتقنيات خطوة بخطوة.</p>
+                            <button class="btn btn-try" onclick="window.open('https://www.youtube.com/playlist?list=PLaQzmDaYayMCuW3Y0LhKnYON8u5_QQYsW', '_blank');">
+                                جرب الآن
+                            </button>
+                                </div>
+                    </div>
+                    <!-- البطاقة الثانية -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-card middle-card">
+                            <div class="icon">
+                                <i class="fa-solid fa-file-alt"></i>
+                            </div>
+                            <h2 class="service-title"> تحويل الفيديو إلى نص</h2>
+                            <p class="service-text">اجعل الفيديوهات مقروءة!حوّل أي فيديو إلى نص مكتوب بدقة عالية.</p>
+                            <button class="btn btn-try" onclick="showCamera()">جرب الآن</button>
+                        </div>
+                    </div>
+                    <!-- البطاقة الثالثة -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-card">
+                            <div class="icon">
+                                <i class="fa-solid fa-hands"></i>
+                            </div>
+                            <h2 class="service-title"> ترجمة لغة الإشارة</h2>
+                            <p class="service-text"> كل إشارة لها معنى.. حوّل إشارات لغة الإشارة إلى نصوص واضحة بسهولة.</p>
+                            <button class="btn btn-try" onclick="showApp()">جرب الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid container3 d-flex flex-wrap">
+                <div class="col-md-6 p-4">
+                    <div class="timeline position-relative">
+                        <h2 class="text-center p-5 fw-bold fs-1">خدمـــاتـنا</h2>
+
+                        <div class="timeline-item">
+                            <div class="timeline-icon">1</div>
+                            <div class="p-3 bg-white shadow-sm rounded">الترجمة الفورية من لغة الإشارة إلى العربية</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">2</div>
+                            <div class="p-3 bg-white shadow-sm rounded">ترجمة الفيديوهات المباشرة</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">3</div>
+                            <div class="p-3 bg-white shadow-sm rounded">مكتبة فيديوهات تعليمية</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">4</div>
+                            <div class="p-3 bg-white shadow-sm rounded">سهولة الوصول والتفاعل</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-section ">
+                </div>
+                <img class="col-md-6 p-4" src="original 1.1.png" alt="Image">
+            </div>
+            <div class="container5">
+                
+                <div class="circle-container">
+                    <div class="circle">5.3K</div>
+                    <div class="label">Visitors</div>
+                </div>
+                <div class="circle-container">
+                    <div class="circle">2K</div>
+                    <div class="label">Signs</div>
+                </div>
+                
+                <div class="circle-container">
+                    <div class="circle">+6K</div>
+                    <div class="label">Accounts</div>
+                </div>
+            </div> 
+            <div class="container4">
+                <h1 id="animated-text"></h1>
+            <div class="container-fluid mt-5">
+                    <div class="row justify-content-evenly">
+                        <div class="col-lg-5 col-md-6 col-12" style="margin-bottom: 80px;">
+                            <a href="ADV.html" class="text-decoration-none">
+                                <div class="card3">
+                                    <div class="overlay">
+                                        <p>كيفيه التحدث مع شخص أصم</p> 
+                                    </div>
+                                    <img src="ph3.png" alt="صورة 1">
+                                    <div class="card3-body">
+                                        <h5 class="card3-title fs-4 p-4">نصائح مهمة للتواصل مع الأشخاص الصم بلغة الإشارة ..</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-12 mb-4">
+                            <a href="ten-sign.html" class="text-decoration-none">
+                                <div class="card3">
+                                    <div class="overlay">
+                                        <p>إشارات أساسية تحتاجها يوميًا</p> 
+                                    </div>
+                                    <img src="ph4.png" alt="صورة 1">
+                                    <div class="card3-body">
+                                        <h5 class="card3-title fs-4 p-4">أهم 10 إشارات يجب أن تتعلمها للتواصل مع الصم.</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-section logo-section">
+                        <img src="logo.jpg" alt="مرسال">
+                        <h2>مرسال</h2>
+                        <p>📍 Cairo, Egypt</p>
+                        <p>📞 +201111111111</p>
+                    </div>
+                    <div class="footer-section social-search">
+                        <h3>روابط مواقعنا على شبكات التواصل الاجتماعي</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="copyright">© جميع حقوق النشر محفوظة - مرسال 2025</p>      
+            </footer>   
+    </div>
+   
+    <div id="app-content">
+        
+            <div class="video-container bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden mb-8">
+                <video id="video" class="w-full h-96 object-cover" autoplay></video>
+            </div>
+
+            <div class="sentence-container bg-gray-50 dark:bg-gray-700 p-4 rounded-lg mb-8 shadow-sm">
+                <p id="sentence" class="text-2xl font-bold text-gray-800 dark:text-gray-200">الجملة المكتشفة: </p>
+            </div>
+
+            <div class="buttons-container grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- زر بدء الكشف (أخضر غامق) -->
+                <button id="start-button" class="bg-gradient-to-r from-green-700 to-green-800 text-white py-3 px-6 rounded-lg hover:from-green-800 hover:to-green-900 transition duration-300 shadow-lg">بدء الكشف</button>
+    
+                <!-- زر إيقاف الكشف (رمادي داكن) -->
+                <button id="stop-button" class="bg-gradient-to-r from-gray-700 to-gray-800 text-white py-3 px-6 rounded-lg hover:from-gray-800 hover:to-gray-900 transition duration-300 shadow-lg" disabled>إيقاف الكشف</button>
+    
+                <!-- زر إعادة تعيين (أزرق غامق) -->
+                <button id="reset-button" class="bg-gradient-to-r from-blue-700 to-blue-800 text-white py-3 px-6 rounded-lg hover:from-blue-800 hover:to-blue-900 transition duration-300 shadow-lg">إعادة تعيين</button>
+    
+                <!-- زر قراءة الجملة (بنفسجي غامق) -->
+                <button id="read-button" class="bg-gradient-to-r from-purple-700 to-purple-800 text-white py-3 px-6 rounded-lg hover:from-purple-800 hover:to-purple-900 transition duration-300 shadow-lg">قراءة الجملة</button>
+    
+                <!-- زر ترجمة الجملة (أزرق متوسط) -->
+                <button id="translate-button" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 transition duration-300 shadow-lg">ترجمة الجملة</button>
+    
+                <!-- زر تبديل اللغة (أزرق داكن) -->
+                <button id="language-button" class="bg-gradient-to-r from-indigo-700 to-indigo-800 text-white py-3 px-6 rounded-lg hover:from-indigo-800 hover:to-indigo-900 transition duration-300 shadow-lg">تبديل إلى الإنجليزية</button>
+    
+                <!-- زر مسح الحرف الأخير (رمادي داكن) -->
+                <button id="delete-button" class="bg-gradient-to-r from-gray-600 to-gray-700 text-white py-3 px-6 rounded-lg hover:from-gray-700 hover:to-gray-800 transition duration-300 shadow-lg">مسح الحرف الأخير</button>
+    
+                <!-- زر إغلاق (أحمر غامق) -->
+                <button id="exit-button" class="bg-gradient-to-r from-red-700 to-red-800 text-white py-3 px-6 rounded-lg hover:from-red-800 hover:to-red-900 transition duration-300 shadow-lg">إغلاق</button>
+            </div>
+    
+            <!-- مؤشر التحميل -->
+            <div id="loading" class="hidden mt-4 text-center">
+                <div class="sk-chase mx-auto">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300 mt-2">جارٍ الكشف...</p>
+            </div>
+        </div>
+
+    <div id="login-content" style="display: none;" class="container">
+        <div class="containerr row">
+          <div class="form-containerr sign-up col-12 col-md-6">
+            <h2>إنضم إلينا!</h2>
+            <input type="text" placeholder="إسمك"><br>
+            <input type="email" placeholder="بريدك الإلكتروني"><br>
+            <input type="password" placeholder="كلمة المرور"><br>
+            <button>إشتراك</button>
+          </div>
+      
+          <div class="form-containerr sign-in col-12 col-md-6">
+            <h2>مرحبًا بعودتك!</h2>
+            <input type="email" placeholder="بريدك الإلكتروني"><br>
+            <input type="password" placeholder="كلمة السر"><br>
+            <button>تسجيل دخول</button>
+          </div>
+      
+          <div class="overlay2 col-12 col-md-6">
+            <div>
+              <h2 id="overlay2-text">دخول إلى حسابك</h2>
+              <button id="toggle-btn">تسجيل الدخول</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="camera-section" class="section">
+        <video id="camera" autoplay playsinline></video><br>
+        <button onclick="stopCameraOnly()">إيقاف الكاميرا</button>
+        <button onclick="window.location.href = 'Gproj.html';">العودة للرئيسية</button>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/Gproj.js"></script>
+
+    </body>
+    </html>     
